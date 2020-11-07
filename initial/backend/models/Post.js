@@ -1,16 +1,9 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
+// TODO: ADD POST MODEL PROPERTIES
 let postSchema = new Schema({
-    title: {
-        type: String
-    },
-    author: {
-        type: String
-    },
-    text: {
-        type: String
-    }
+
 }, {
     collection: "posts"
 });

@@ -23,7 +23,8 @@ mongoose.connect(dbConfig.db, {
 )
 
 var indexRouter = require('./routes/index');
-var postsRouter = require('./routes/posts');
+
+// TODO: INITIALIZE POSTS ROUTER
 
 var app = express();
 
@@ -44,7 +45,8 @@ app.use(bodyParser.urlencoded({
 app.use(cors());
 
 app.use('/', indexRouter);
-app.use('/posts', postsRouter);
+
+// TODO: ADD POSTS ROUTER
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

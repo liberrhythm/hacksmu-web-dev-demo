@@ -3,70 +3,20 @@ var router = express.Router();
 
 let postSchema = require("../models/Post");
 
-/* GET (READ) posts */
+/* TODO: GET (READ) posts route */
 router.get('/', function(req, res, next) {
-  postSchema.find((error, data) => {
-    if (error) {
-      return next(error);
-    }
-    else {
-      res.json(data);
-    }
-  }) 
+
 });
 
-/* GET (READ) one post */
+/* TODO: GET (READ) one post route */
 router.get('/:id', function(req, res, next) {
-  postSchema.findById(req.params.id, (error, data) => {
-    if (error) {
-      return next(error);
-    }
-    else {
-      res.json(data);
-    }
-  }) 
+
 });
 
-/* POST (CREATE) one post */
+/* TODO: POST (CREATE) one post route */
 router.post('/create', function(req, res, next) {
-  console.log("post");
   postSchema.create(req.body, (error, data) => {
-    if (error) {
-      console.log(error);
-      return next(error);
-    }
-    else {
-      console.log("Created post successfully!");
-      res.json(data);
-    }
-  }) 
-});
 
-/* PUT (UPDATE) one post */
-router.put('/:id', function(req, res, next) {
-  postSchema.findByIdAndUpdate(req.params.id, {
-    $set: req.body
-  }, (error, data) => {
-    if (error) {
-      return next(error);
-    }
-    else {
-      console.log("Updated post successfully!");
-      res.json(data);
-    }
-  }) 
-});
-
-/* DELETE posts */
-router.delete('/:id', function(req, res, next) {
-  postSchema.findByIdAndDelete(req.params.id, (error, data) => {
-    if (error) {
-      return next(error);
-    }
-    else {
-      console.log("Deleted post successfully!");
-      res.json(data);
-    }
   }) 
 });
 
