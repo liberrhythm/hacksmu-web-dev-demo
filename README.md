@@ -43,4 +43,4 @@ At this point, you are good to go for the workshop! See you there!
 
 ### References Used
 * https://www.positronx.io/react-mern-stack-crud-app-tutorial/
-# https://medium.com/@arijit_chowdhury/basic-crud-app-setup-with-react-node-js-express-mysql-5e097e1145ff
+* https://medium.com/@arijit_chowdhury/basic-crud-app-setup-with-react-node-js-express-mysql-5e097e1145ff
